@@ -2,32 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 209 21% 95%;
+    --foreground: 209 5% 10%;
+    --card: 209 21% 90%;
+    --card-foreground: 209 5% 12%;
+    --popover: 209 21% 95%;
+    --popover-foreground: 209 95% 10%;
+    --primary: 209 80% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 209 21% 70%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 171 21% 85%;
+    --muted-foreground: 209 5% 35%;
+    --accent: 171 21% 80%;
+    --accent-foreground: 209 5% 12%;
+    --destructive: 0 50% 30%;
+    --destructive-foreground: 209 5% 90%;
+    --border: 209 21% 50%;
+    --input: 209 21% 18%;
+    --ring: 209 80% 39%;
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 209 21% 10%;
+    --foreground: 209 5% 90%;
+    --card: 209 21% 10%;
+    --card-foreground: 209 5% 90%;
+    --popover: 209 21% 5%;
+    --popover-foreground: 209 5% 90%;
+    --primary: 209 80% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 209 21% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 171 21% 15%;
+    --muted-foreground: 209 5% 60%;
+    --accent: 171 21% 15%;
+    --accent-foreground: 209 5% 90%;
+    --destructive: 0 50% 30%;
+    --destructive-foreground: 209 5% 90%;
+    --border: 209 21% 18%;
+    --input: 209 21% 18%;
+    --ring: 209 80% 39%;
+    --radius: 0.75rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .page-content {
+    @apply flex min-h-screen flex-col items-center justify-between p-4 md:p-24;
   }
 }
