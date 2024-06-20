@@ -149,7 +149,14 @@ const ConatctForm = () => {
               {errors.message && <p className="error-msg">*{errors.message}</p>}
             </div>
             <CardFooter className="flex justify-center p-0 mt-7">
-              <Button variant={"outline"}>Submit</Button>
+              <Button
+                variant={"outline"}
+                size="lg"
+                type="submit"
+                className="font-semibold tracking-wider"
+              >
+                Submit
+              </Button>
             </CardFooter>
           </form>
         </CardContent>

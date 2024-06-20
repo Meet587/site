@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <main className="page-content">
       <h1 className="heading-2">Contact Us</h1>
-      <section className="grid grid-cols-1 md:grid-cols-2  items-center gap-10 my-6 pb-8 md:my-12">
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 my-6 p-6 pb-8 md:my-12">
         <ConatctForm />
         <Image
           src={"/contact_us.svg"}
