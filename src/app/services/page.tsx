@@ -81,7 +81,7 @@ const Service = () => {
         {/* ============= OUR OFFERINGS section ========= */}
         <section className="my-6 pb-8 md:my-6 px-4 md:px-16 bg-background p-4 sm:p-10">
           <article>
-            <h3 className="text-4xl text-primary font-bold">What We Do?</h3>
+            <h3 className="text-4xl text-primary font-bold">OUR OFFERINGS</h3>
             <Separator className="my-4" />
             <p className="tracking-[.15em] leading-8 mt-8 md:mt-10 font-medium text-muted-foreground">
               With an unstable economy, formulating new strategies to save
